@@ -1,0 +1,11 @@
+C:\Users\wsanchezm\Desktop\Carv\carv_1\ModelsClass\bin\Debug\netcoreapp3.1\ModelsClass.deps.json
+C:\Users\wsanchezm\Desktop\Carv\carv_1\ModelsClass\bin\Debug\netcoreapp3.1\ModelsClass.runtimeconfig.json
+C:\Users\wsanchezm\Desktop\Carv\carv_1\ModelsClass\bin\Debug\netcoreapp3.1\ModelsClass.runtimeconfig.dev.json
+C:\Users\wsanchezm\Desktop\Carv\carv_1\ModelsClass\bin\Debug\netcoreapp3.1\ModelsClass.dll
+C:\Users\wsanchezm\Desktop\Carv\carv_1\ModelsClass\bin\Debug\netcoreapp3.1\ModelsClass.pdb
+C:\Users\wsanchezm\Desktop\Carv\carv_1\ModelsClass\obj\Debug\netcoreapp3.1\ModelsClass.AssemblyInfoInputs.cache
+C:\Users\wsanchezm\Desktop\Carv\carv_1\ModelsClass\obj\Debug\netcoreapp3.1\ModelsClass.AssemblyInfo.cs
+C:\Users\wsanchezm\Desktop\Carv\carv_1\ModelsClass\obj\Debug\netcoreapp3.1\ModelsClass.csproj.CoreCompileInputs.cache
+C:\Users\wsanchezm\Desktop\Carv\carv_1\ModelsClass\obj\Debug\netcoreapp3.1\ModelsClass.dll
+C:\Users\wsanchezm\Desktop\Carv\carv_1\ModelsClass\obj\Debug\netcoreapp3.1\ModelsClass.pdb
+C:\Users\wsanchezm\Desktop\Carv\carv_1\ModelsClass\obj\Debug\netcoreapp3.1\ModelsClass.genruntimeconfig.cache

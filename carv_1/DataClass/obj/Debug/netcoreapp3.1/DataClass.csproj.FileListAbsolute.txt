@@ -1,0 +1,15 @@
+C:\Users\wsanchezm\Desktop\Carv\carv_1\DataClass\bin\Debug\netcoreapp3.1\DataClass.deps.json
+C:\Users\wsanchezm\Desktop\Carv\carv_1\DataClass\bin\Debug\netcoreapp3.1\DataClass.runtimeconfig.json
+C:\Users\wsanchezm\Desktop\Carv\carv_1\DataClass\bin\Debug\netcoreapp3.1\DataClass.runtimeconfig.dev.json
+C:\Users\wsanchezm\Desktop\Carv\carv_1\DataClass\bin\Debug\netcoreapp3.1\DataClass.dll
+C:\Users\wsanchezm\Desktop\Carv\carv_1\DataClass\bin\Debug\netcoreapp3.1\DataClass.pdb
+C:\Users\wsanchezm\Desktop\Carv\carv_1\DataClass\bin\Debug\netcoreapp3.1\ModelsClass.dll
+C:\Users\wsanchezm\Desktop\Carv\carv_1\DataClass\bin\Debug\netcoreapp3.1\ModelsClass.pdb
+C:\Users\wsanchezm\Desktop\Carv\carv_1\DataClass\obj\Debug\netcoreapp3.1\DataClass.csprojAssemblyReference.cache
+C:\Users\wsanchezm\Desktop\Carv\carv_1\DataClass\obj\Debug\netcoreapp3.1\DataClass.AssemblyInfoInputs.cache
+C:\Users\wsanchezm\Desktop\Carv\carv_1\DataClass\obj\Debug\netcoreapp3.1\DataClass.AssemblyInfo.cs
+C:\Users\wsanchezm\Desktop\Carv\carv_1\DataClass\obj\Debug\netcoreapp3.1\DataClass.csproj.CoreCompileInputs.cache
+C:\Users\wsanchezm\Desktop\Carv\carv_1\DataClass\obj\Debug\netcoreapp3.1\DataClass.csproj.CopyComplete
+C:\Users\wsanchezm\Desktop\Carv\carv_1\DataClass\obj\Debug\netcoreapp3.1\DataClass.dll
+C:\Users\wsanchezm\Desktop\Carv\carv_1\DataClass\obj\Debug\netcoreapp3.1\DataClass.pdb
+C:\Users\wsanchezm\Desktop\Carv\carv_1\DataClass\obj\Debug\netcoreapp3.1\DataClass.genruntimeconfig.cache
