@@ -33,7 +33,22 @@ namespace carv_1
                     Description = "CarvApi",
                     Contact = null
                 });
+
             });
+
+            services.AddCors(op =>
+            {
+                op.AddPolicy(name: "corsAllowance",
+                    builder =>
+                    {
+                        builder.AllowAnyOrigin();
+                        builder.AllowAnyMethod();
+                        builder.AllowAnyHeader();
+                        //builder.AllowCredentials();
+                        //builder.WithOrigins("http://localhost:55957/*");
+                    });
+            });
+            services.AddControllers();
         }
         public IConfiguration Configuration { get; }
 
@@ -52,17 +67,20 @@ namespace carv_1
                 app.UseDeveloperExceptionPage();
             }
             app.UseSwagger();
-            app.UseSwaggerUI(c=> {
+            app.UseSwaggerUI(c =>
+            {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Carv API V1");
             });
-            app.UseRouting();
-            
-            app.UseAuthorization();
+            app.UseCors("corsAllowance");
 
+            app.UseRouting();
+
+            app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+
         }
     }
 }

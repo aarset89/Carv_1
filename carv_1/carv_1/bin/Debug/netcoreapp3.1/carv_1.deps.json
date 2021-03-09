@@ -24,7 +24,6 @@
     ".NETCoreApp,Version=v3.1": {
       "carv_1/1.0.0": {
         "dependencies": {
-          "BusinessClass": "1.0.0",
           "DataClass": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.3",
           "Microsoft.EntityFrameworkCore.Design": "5.0.3",
@@ -3086,12 +3085,6 @@
           "WindowsBase.dll": {}
         },
         "compileOnly": true
-      },
-      "BusinessClass/1.0.0": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "5.0.3"
-        },
-        "compileOnly": true
       }
     }
   },
@@ -5172,11 +5165,6 @@
     },
     "WindowsBase/4.0.0.0": {
       "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "BusinessClass/1.0.0": {
-      "type": "project",
       "serviceable": false,
       "sha512": ""
     }

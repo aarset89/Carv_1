@@ -9,3 +9,4 @@ C:\Users\wsanchezm\Desktop\Carv\carv_1\ModelsClass\obj\Debug\netcoreapp3.1\Model
 C:\Users\wsanchezm\Desktop\Carv\carv_1\ModelsClass\obj\Debug\netcoreapp3.1\ModelsClass.dll
 C:\Users\wsanchezm\Desktop\Carv\carv_1\ModelsClass\obj\Debug\netcoreapp3.1\ModelsClass.pdb
 C:\Users\wsanchezm\Desktop\Carv\carv_1\ModelsClass\obj\Debug\netcoreapp3.1\ModelsClass.genruntimeconfig.cache
+C:\Users\wsanchezm\Desktop\Carv\carv_1\ModelsClass\obj\Debug\netcoreapp3.1\ModelsClass.csprojAssemblyReference.cache

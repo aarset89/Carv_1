@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Text;
 using ModelsClass.Data;
 
-namespace ModelsClass.User
+namespace ModelsClass.Data
 {
     public class User
     {

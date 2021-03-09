@@ -1580,19 +1580,6 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "BusinessClass/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "5.0.3"
-        },
-        "compile": {
-          "bin/placeholder/BusinessClass.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/BusinessClass.dll": {}
-        }
-      },
       "DataClass/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -5929,11 +5916,6 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "BusinessClass/1.0.0": {
-      "type": "project",
-      "path": "../BusinessClass/BusinessClass.csproj",
-      "msbuildProject": "../BusinessClass/BusinessClass.csproj"
-    },
     "DataClass/1.0.0": {
       "type": "project",
       "path": "../DataClass/DataClass.csproj",
@@ -5947,7 +5929,6 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "BusinessClass >= 1.0.0",
       "DataClass >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.3",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.3",
@@ -5986,9 +5967,6 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\wsanchezm\\Desktop\\Carv\\carv_1\\BusinessClass\\BusinessClass.csproj": {
-              "projectPath": "C:\\Users\\wsanchezm\\Desktop\\Carv\\carv_1\\BusinessClass\\BusinessClass.csproj"
-            },
             "C:\\Users\\wsanchezm\\Desktop\\Carv\\carv_1\\DataClass\\DataClass.csproj": {
               "projectPath": "C:\\Users\\wsanchezm\\Desktop\\Carv\\carv_1\\DataClass\\DataClass.csproj"
             },

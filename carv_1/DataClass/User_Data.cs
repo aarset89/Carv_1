@@ -1,6 +1,6 @@
 ﻿using ModelsClass.Common;
+using ModelsClass.Data;
 using ModelsClass.MethodParameters;
-using ModelsClass.User;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,14 +21,14 @@ namespace DataClass
             BaseOut output = new BaseOut() { Result = Result.error };
             try
             {
-                var userInDb = _context.Users.SingleOrDefault(m => m.IdNumber == input.IdNumber || m.Email == input.Email);
+                var userInDb = _context.Users.SingleOrDefault(m => m.IdNumber == Convert.ToInt32(input.IdNumber) || m.Email == input.Email);
                 if (userInDb == null)
                 {
                     var a = _context.Users.Add(new User()
                     {
                         Email = input.Email,
-                        IdNumber = input.IdNumber,
-                        IdType = input.IdType,
+                        IdNumber = Convert.ToInt32(input.IdNumber),
+                        IdType = Convert.ToInt32(input.IdType),
                         Name = input.Name,
                         PassWord = SerializePass(Encoding.UTF8.GetBytes(input.PassWord)),
                         Surname = "Apellido1"
@@ -57,7 +57,7 @@ namespace DataClass
             UserLoginOut output = new UserLoginOut() { Result = Result.error, usrLoggued = false};
             try
             {
-                var userInDb = _context.Users.SingleOrDefault(m => m.IdNumber == input.IdNumber);
+                var userInDb = _context.Users.SingleOrDefault(m => m.IdNumber == Convert.ToInt32(input.IdNumber));
                 if(userInDb != null)
                 {
                     var usr_passEnc = SerializePass(Encoding.UTF8.GetBytes(input.PassWord));
@@ -65,6 +65,7 @@ namespace DataClass
                     {
                         output.Result = Result.success;
                         output.usrLoggued = true;
+                        output.token = GetTokenSession(input);
                     }
                     else
                     {
@@ -88,6 +89,25 @@ namespace DataClass
             return output;
         }
 
+        private string  GetTokenSession(UserLoginIn input)
+        {
+            var aa = new HandleSession()
+            {
+                LoggingTime = DateTime.Now,
+                Status = true,
+                Token = Guid.NewGuid().ToString(),
+                userId = Convert.ToInt32(input.IdNumber)
+            };
+            var a = _context.HandleSessions.Add(new HandleSession()
+            {
+                LoggingTime = DateTime.Now,
+                Status = true,
+                Token = Guid.NewGuid().ToString(),
+                userId = Convert.ToInt32( input.IdNumber)
+            });
+            _context.SaveChanges();
+            return a.Entity.Token;
+        }
         private string SerializePass(byte[] passIn)
         {
             string res = "";

@@ -14,10 +14,10 @@ namespace ModelsClass.MethodParameters
 
         public string Surname { get; set; }
         [Required]
-        public int IdType { get; set; }
+        public string IdType { get; set; }
 
         [Required]
-        public int IdNumber { get; set; }
+        public string IdNumber { get; set; }
         [Required]
 
         public string PassWord { get; set; }

@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ModelsClass.Data;
-using ModelsClass.User;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -15,6 +14,7 @@ namespace DataClass
 
         public DbSet<User> Users { get; set; }
         public DbSet<IdentificationType> IdentificationTypes { get; set; }
+        public DbSet<HandleSession> HandleSessions { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

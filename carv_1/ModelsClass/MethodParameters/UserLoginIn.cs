@@ -8,7 +8,7 @@ namespace ModelsClass.MethodParameters
     public class UserLoginIn
     {
         [Required]
-        public int IdNumber { get; set; }
+        public string IdNumber { get; set; }
         [Required]
         public string PassWord { get; set; }
     }

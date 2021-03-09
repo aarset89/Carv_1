@@ -1,4 +1,5 @@
 ﻿using DataClass;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ModelsClass.Common;
@@ -13,6 +14,7 @@ namespace carv_1.Controllers.Api
 {
     [Route("api/user")]
     [ApiController]
+    //[EnableCors("corsAllowance")]
     public class UserController : ControllerBase
     {
         [HttpPost]
@@ -53,10 +55,10 @@ namespace carv_1.Controllers.Api
                 var output = user_Business.Login(input);
                 switch (output.Result)
                 {
-                    case (Result.success):
-                        return Ok(output);
+                    case (Result.error):
+                        return StatusCode(500, output);
                     default:
-                        return StatusCode(500,output);
+                        return Ok(output);
                 }
             }
             else

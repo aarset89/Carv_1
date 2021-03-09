@@ -4,14 +4,16 @@ using DataClass;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DataClass.Migrations
 {
     [DbContext(typeof(AppContext))]
-    partial class AppContextModelSnapshot : ModelSnapshot
+    [Migration("20210309165526_UpdatingingHandleSessionTable")]
+    partial class UpdatingingHandleSessionTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -39,6 +41,8 @@ namespace DataClass.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("userId");
 
                     b.ToTable("HandleSessions");
                 });
@@ -108,6 +112,17 @@ namespace DataClass.Migrations
                     b.HasIndex("IdType");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("ModelsClass.Data.HandleSession", b =>
+                {
+                    b.HasOne("ModelsClass.Data.User", "User")
+                        .WithMany()
+                        .HasForeignKey("userId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("ModelsClass.Data.User", b =>

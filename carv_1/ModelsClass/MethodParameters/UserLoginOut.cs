@@ -9,5 +9,6 @@ namespace ModelsClass.MethodParameters
     public class UserLoginOut:BaseOut
     {
         public bool usrLoggued { get; set; }
+        public string token { get; set; }
     }
 }
