@@ -69,6 +69,7 @@ namespace DataClass
                     }
                     else
                     {
+                        output.Result = Result.notFound;
                         output.Message = "Usuario o contraseña incorrecta";
                     }
                 }

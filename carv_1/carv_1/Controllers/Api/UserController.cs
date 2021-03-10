@@ -28,12 +28,11 @@ namespace carv_1.Controllers.Api
                 var output = user_Business.CreateUser(input);
                 switch (output.Result)
                 {
-                    case (Result.success):
-                        return Ok(output);
-                    case (Result.alreadyExist):
-                        return BadRequest(output);
+                    case (Result.error):
+                        return StatusCode(500, output);
                     default:
-                        return StatusCode(500,output);
+                        return Ok(output);
+                        
                 }
             }
             else
